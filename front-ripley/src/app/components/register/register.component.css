@@ -1,0 +1,19 @@
+.middle{
+	width: 400px;
+text-align: left;
+position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	
+}
+.centrar{
+    position: relative;
+
+}
+.align-middle{
+	text-align: center;
+}
+.align-middle button{
+	width: 120px;
+}

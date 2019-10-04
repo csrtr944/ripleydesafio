@@ -1,0 +1,23 @@
+
+.align-middle{
+	text-align: center;
+}
+.align-middle button{
+	width: 120px;
+}
+.centrar{
+    position: relative;
+}
+.middle{
+	width: 400px;
+text-align: center;
+position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	
+}
+button{
+	text-align: center
+}
+

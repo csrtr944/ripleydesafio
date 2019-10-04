@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+<div class="container">
+
+   <div class="card-columns">
+        
+        <div class="card mt-5 resize" style="width: 18rem; height: 21rem;" *ngFor="let product of productos">
+                <a routerLink="/producto/{{product.partNumber}}" routerLinkActive="active">
+     
+                <img [src]="product.fullImage" class="card-img-top" alt="...">
+
+                <div class="card-body">
+                    <h6 class="card-title">{{product.name}}</h6>
+                    <b><p class="card-text" >$ {{product.prices.listPrice}}</p></b>
+                    
+                </div>
+            </a>
+        </div>
+        
+   </div> 
+</div>

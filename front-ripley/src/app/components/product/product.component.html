@@ -1,0 +1,72 @@
+<app-navbar></app-navbar>
+
+<div class="container mt-5">
+    
+        <div class="row">
+            <div class="col-md-7 photo">
+                <img *ngIf="photo" [src]="photo" width="100%"/>
+            </div>
+            <div class="col-md-5 photo" >
+                <section class="headerprod">
+                    
+                    <h4>{{name}}</h4>
+                    <small>SKU: <span>{{sku}}</span></small>
+                    <div class="col" width="100%" style="background:white">
+                    <p style="display: inline-block">* * * * *</p><span>  Clasificacion</span>
+                
+                    </div>
+                </section>
+                <section class="seccion">
+                    <ul>
+                        <li><span >Normal</span><span class="spanMove">{{precioNormal}}</span></li>
+                        <li style="color:red"><span>Internet</span><span class="spanMove">{{precioOferta}}</span></li>
+                    </ul>
+                    <ul>
+                            <li><a href="#" class="cotiza">Caulcular cuota</a></li>
+                            
+                        </ul>
+                    <ul>
+                        <li><span>Descuento</span><span class="spanMove">{{descuento}}%</span></li>
+                        
+                    </ul>
+                    
+                    <ul>
+                        <li><span>Acumulas</span><span class="spanMove">{{ripleyPts}} RipleyPuntos GO</span></li>   
+                    </ul>
+                </section>
+                <section class="addBoleta mt-3">
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-4 col-lg-3">
+                            <input type="number" class="full-width number">
+                        </div>
+                        <div class="col-xs-8 col-sm-8 col-lg-9 ">
+                        <button class="full-width flat-boton">Agregar a la bolsa</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="despacho mt-3">
+                    <div class="row">
+                        <div class="col-md-8">
+                                <p class="">Despacho disponible</p>
+                                <p class="">Retiro en tienda no disponible</p>
+                        </div>
+                        <div class="col-md-4">
+                                <button class="full-width btn btn-outline-dark btn-sm " >Ver agenda</button>
+                        </div>
+                    </div>  
+                </section>       
+            </div>             
+        </div>
+        <div class="jumbotron">
+        <div class="row">
+
+            
+            <section class="info">
+                <h3>Información</h3>
+                <div [innerHTML]="descripcion"></div>
+            </section>
+
+            
+        </div>
+    </div>
+</div>

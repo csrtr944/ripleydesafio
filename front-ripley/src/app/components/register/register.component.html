@@ -1,0 +1,31 @@
+<div class="centrar">
+    <div class="middle col-lg-4 col-lg-4-offset col-md-4">
+      <h4 style="text-align: center" class="mb-5">Registrar</h4>
+            <form #myform="ngForm" (ngSubmit)="crearUsuario(myform)">
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <label for="inputEmail4">Nombre: </label>
+                    <input ngModel #firstName="ngModel" name="firstName" type="text" class="form-control" id="inputEmail1" placeholder="Nombre">
+                  </div>
+                  <div class="form-group col-md-12">
+                    <label for="inputEmail4">Apellido: </label>
+                    <input ngModel #lastName="ngModel" name="lastName" type="text" class="form-control" id="inputEmail2" placeholder="Apellido">
+                  </div>
+                  <div class="form-group col-md-12">
+                    <label for="inputEmail4">Email: </label>
+                    <input ngModel #email="ngModel" name="email" type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                  </div>
+                  <div class="form-group col-md-12">
+                    <label for="inputPassword4">Password</label>
+                    <input ngModel #password="ngModel" name="password" type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                  </div>
+                </div>
+                <div class="align-middle">
+                    <button type="submit" class="btn btn-primary" >Registrar</button>
+
+                </div>
+                
+              </form>
+        </div>
+    </div>
+    

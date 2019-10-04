@@ -1,0 +1,44 @@
+ul{
+    list-style: none;
+}
+
+.seccion{
+    height: 300px;
+    background: white;
+}
+.inline{
+    display: inline-block;
+}
+
+.especificaciones{
+    
+    left:50px;
+    text-align: center;
+    margin: auto;
+}
+
+.spanMove{
+    margin-right: 15px;
+    float:right;
+}
+.full-width{
+    display: block;
+    width: 100%;
+    
+    
+}
+.cotiza{
+    display: block;
+    text-align: right;
+    margin-right: 15px;
+}
+
+.flat-boton{
+    background: red;
+    border-style: none;
+    height: 50px;
+    color:white;
+}
+.number{
+    height: 50px;
+}
